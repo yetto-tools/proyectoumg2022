@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
-import logo from "../../assets/react.svg";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import logo from '@/assets/react.svg'
 
 export const NavBar = () => {
   return (
-    <header className="flex items-center pb-2 md:pb-4 rounded  bg-white shadow-md shadow-black/30 mb-2">
+    <header className="flex items-center pb-2 md:pb-4 rounded  bg-white shadow-md shadow-black/30 mb-2 ">
       <div className="flex">
         <Link to="/" style={{ padding: 5 }}>
           <img src={logo} alt="Logo" />
@@ -29,6 +30,6 @@ export const NavBar = () => {
         </ul>
       </nav>
     </header>
-  );
-};
-export default NavBar;
+  )
+}
+export default NavBar
