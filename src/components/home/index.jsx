@@ -11,9 +11,7 @@ export const Home = () => {
             <div className="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
               <div className="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
                 <div className="home__welcome markdown">
-                  <h1>
-                    Yo, I’m Bluise - A Nuxt.js &amp; Netlify CMS boilerplate.
-                  </h1>
+                  <h1>Mesaje de Pruebas para la cosi</h1>
                   <p>
                     Authentic cred hoodie hashtag selfies. Raclette banjo
                     cardigan cred. Kitsch XOXO lomo polaroid. Knausgaard put a
