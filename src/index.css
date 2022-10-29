@@ -5,7 +5,7 @@
 
 @layer components{
   body{
-    @apply bg-zinc-50
+    @apply bg-gradient-to-tl from-purple-600 via-rose-300 to-yellow-400;
   }
   data{
    @apply h-screen bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500;

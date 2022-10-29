@@ -2,41 +2,36 @@ import React from 'react';
 import { Home } from '@/components/home/index';
 import { About } from '@/components/about/index';
 import { Contact } from '@/components/contact';
-import NavBar from '@components/navbar';
+import NavBar from '@/components/navbar';
 import { Switch, Route, Router } from 'wouter';
 
 export function App() {
   return (
     <>
-      {/* wouter */}
       <NavBar />
       <Switch>
         <Router>
-          <Route
-            component={Home}
-            path='/'
-          >
-            Inicio
+          <Route path='/'>
+            <Home></Home>
           </Route>
-          <Route
-            component={Contact}
-            path='/contact'
-          />
-          <Route
-            component={About}
-            path='/about'
-          />
+
+          <Route path='/contact'>
+            <Contact
+              title={
+                <div className='font-semibol mt-5 flex justify-center text-4xl'>
+                  Contactos
+                </div>
+              }
+            >
+              texto
+            </Contact>
+          </Route>
+
+          <Route path='/about'>
+            <About>Acerca de Nosotros</About>
+          </Route>
         </Router>
       </Switch>
-      {/* <BrowserRouter>
-              <NavBar />
-              <Routes>
-                <Route path='/' component={Home} />
-                <Route path='/contact' component={Contact} />
-                <Route path='/about' component={About} />
-              </Routes>
-            </BrowserRouter>
-          */}
     </>
   );
 }

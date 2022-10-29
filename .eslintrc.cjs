@@ -10,7 +10,8 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'react/no-set-state': 'off',
+    'react/no-set-state': 'on',
+    'react/prop-types': ['off'],
     indent: ['error', 2],
     quotes: ['error', 'single'],
     'comma-dangle': ['error', 'only-multiline'],
