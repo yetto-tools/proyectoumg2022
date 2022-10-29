@@ -2,7 +2,7 @@ import React from 'react';
 import { Home } from '@/components/home/index';
 import { About } from '@/components/about/index';
 import { Contact } from '@/components/contact';
-import NavBar from './components/navbar';
+import NavBar from '@components/navbar';
 import { Switch, Route, Router } from 'wouter';
 
 export function App() {
